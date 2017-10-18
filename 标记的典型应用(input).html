@@ -5,134 +5,177 @@
 <title>&lt;input&gt;标记的典型应用</title>
 </head>
 <body>
-<form action="" methon="post" name="myform">
-<table width="694" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td><img src="images/01.gif" width="694" height="168"></td>
-  </tr>
-</table>
-<table width="694" border="0" align="center" cellpadding="0" cellspacing="0">
-	<tr>
-		<td width="103" height="231" valign="top"><img src="images/02.gif" width="35"></td>
-		<td width="547" valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
-		
-		</table></td>
-		<td width="44" valign="top"><img src="images/04.gif" width="44"></td>
-	</tr>
-</table>
-<p>上面是两个table嵌套</p>
-<p>扩展学习：cellspacing="50%" cellpadding="80"</p>
-<p>先介绍一些概念</p>
-<p>单元格(cell) -- 表格的内容</p>
-<p>单元格边距(表格填充)(cellpadding) -- 代表单元格外面的一个距离,用于隔开单元格与单元格空间</p>
-<p>单元格间距(表格间距)(cellspacing) -- 代表表格边框与单元格补白的距离,也是单元格补白之间的距离</p>
-<p>引用网址:http://www.dreamdu.com/xhtml/attribute_cellpadding_cellspacing/</p>
-<table width="80%" border="1" cellspacing="50" cellpadding="80">
-    <tr>
-        <th>www.dreamdu.com</th>
-        <th>.com域名的数量</th>
-        <th>.cn域名的数量</th>
-        <th>.net域名的数量</th>
-    </tr>
-    <tr>
-        <td>2003年</td>
-        <td>1000</td>
-        <td>2000</td>
-        <td>3000</td>
-    </tr>
-    <tr>
-        <td>2004年</td>
-        <td>4000</td>
-        <td>5000</td>
-        <td>6000</td>
-    </tr>
-    <tr>
-        <td>2005年</td>
-        <td>7000</td>
-        <td>8000</td>
-        <td>9000</td>
-    </tr>
-</table>
-<table width="80%" border="1" cellspacing="50%" cellpadding="80">
-    <tr>
-        <th>www.dreamdu.com</th>
-        <th>.com域名的数量</th>
-        <th>.cn域名的数量</th>
-        <th>.net域名的数量</th>
-    </tr>
-    <tr>
-        <td>2003年</td>
-        <td>1000</td>
-        <td>2000</td>
-        <td>3000</td>
-    </tr>
-    <tr>
-        <td>2004年</td>
-        <td>4000</td>
-        <td>5000</td>
-        <td>6000</td>
-    </tr>
-    <tr>
-        <td>2005年</td>
-        <td>7000</td>
-        <td>8000</td>
-        <td>9000</td>
-    </tr>
-</table>
-<p>分段</p>
-<table width="80%" border="1" cellpadding="80">
-    <tr>
-        <th>www.dreamdu.com</th>
-        <th>.com域名的数量</th>
-        <th>.cn域名的数量</th>
-        <th>.net域名的数量</th>
-    </tr>
-    <tr>
-        <td align="center">2003年</td>
-        <td align="center">1000</td>
-        <td align="center">2000</td>
-        <td align="center">3000</td>
-    </tr>
-    <tr>
-        <td>2004年</td>
-        <td>4000</td>
-        <td>5000</td>
-        <td>6000</td>
-    </tr>
-    <tr>
-        <td>2005年</td>
-        <td>7000</td>
-        <td>8000</td>
-        <td>9000</td>
-    </tr>
-</table>
-<p>分段</p>
-<table width="80%" border="1" cellpadding="10">
-    <tr>
-        <th>www.dreamdu.com</th>
-        <th>.com域名的数量</th>
-        <th>.cn域名的数量</th>
-        <th>.net域名的数量</th>
-    </tr>
-    <tr>
-        <td align="center">2003年</td>
-        <td align="center">1000</td>
-        <td align="center">2000</td>
-        <td align="center">3000</td>
-    </tr>
-    <tr>
-        <td>2004年</td>
-        <td>4000</td>
-        <td>5000</td>
-        <td>6000</td>
-    </tr>
-    <tr>
-        <td>2005年</td>
-        <td>7000</td>
-        <td>8000</td>
-        <td>9000</td>
-    </tr>
-</table>
-</form>
+	<form action="" methon="post" name="myform">
+		<table width="694" border="0" align="center" cellpadding="0"
+			cellspacing="0">
+			<tr>
+				<td><img src="images/01.gif" width="694" height="168"></td>
+			</tr>
+		</table>
+		<table width="694" border="0" align="center" cellpadding="0"
+			cellspacing="0">
+			<tr>
+				<td width="103" height="231" valign="top"><img
+					src="images/02.gif" width="35"></td>
+				<td width="547" valign="top"><table width="100%" border="0"
+						cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="17%" height="29" align="center">用 户 名：</td>
+							<td colspan="2"><input name="username" type="text"
+								id="UserName4" maxlength="20"></td>
+						</tr>
+						<tr>
+							<td height="28" align="center">密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+							<td height="28" colspan="2"><input name="pwd1"
+								type="password" id="PWD14" size="20" maxlength="20"></td>
+						</tr>
+						<tr>
+							<td height="28" align="center">确认密码：</td>
+							<td height="28" colspan="2"><input name="pwd2"
+								type="password" id="PWD25" size="20" maxlength="20"></td>
+						</tr>
+						<tr>
+							<td height="28" align="center">性&nbsp;&nbsp;&nbsp;&nbsp;别：</td>
+							<td colspan="2"><input name="sex" type="radio"
+								class="noborder" value="男" checked> 男&nbsp; <input
+								name="sex" type="radio" class="noborder" value="女"> 女</td>
+						</tr>
+						<tr>
+							<td height="28" align="center">爱&nbsp;&nbsp;&nbsp;&nbsp;好：</td>
+							<td colspan="2" class="word_grey">
+								<input name="like" type="checkbox" id="like" value="体育"> 体育 
+								<input name="like" type="checkbox" id="like" value="旅游"> 旅游
+								<input name="like" type="checkbox" id="like" value="听音乐">听音乐
+								<input name="like" type="checkbox" id="like" value="看书">看书
+							</td>
+						</tr>
+						<tr>
+            				<td height="28" align="center" style="padding-left:10px">E-mail：</td>
+            				<td colspan="2" class="word_grey"><input name="email" type="text" id="PWD224" size="50"></td>
+          				</tr>
+          				<tr>
+            				<td height="34">&nbsp;</td>
+            				<td width="30%" class="word_grey"><input name="Submit" type="submit" class="btn_grey" value="确定保存">
+            				<input name="Reset" type="reset" class="btn_grey" id="Reset" value="重新填写"></td>
+           		 			<td width="53%" class="word_grey"><input type="image" name="imageField" src="images/btn_bg.jpg"></td>
+          				</tr>
+					</table></td>
+				<td width="44" valign="top"><img src="images/04.gif" width="44"></td>
+			</tr>
+		</table>
+		<p>上面是两个table嵌套</p>
+		<p>扩展学习：cellspacing="50%" cellpadding="80"</p>
+		<p>先介绍一些概念</p>
+		<p>单元格(cell) -- 表格的内容</p>
+		<p>单元格边距(表格填充)(cellpadding) -- 代表单元格外面的一个距离,用于隔开单元格与单元格空间</p>
+		<p>单元格间距(表格间距)(cellspacing) -- 代表表格边框与单元格补白的距离,也是单元格补白之间的距离</p>
+		<p>引用网址:http://www.dreamdu.com/xhtml/attribute_cellpadding_cellspacing/</p>
+		<table width="80%" border="1" cellspacing="50" cellpadding="80">
+			<tr>
+				<th>www.dreamdu.com</th>
+				<th>.com域名的数量</th>
+				<th>.cn域名的数量</th>
+				<th>.net域名的数量</th>
+			</tr>
+			<tr>
+				<td>2003年</td>
+				<td>1000</td>
+				<td>2000</td>
+				<td>3000</td>
+			</tr>
+			<tr>
+				<td>2004年</td>
+				<td>4000</td>
+				<td>5000</td>
+				<td>6000</td>
+			</tr>
+			<tr>
+				<td>2005年</td>
+				<td>7000</td>
+				<td>8000</td>
+				<td>9000</td>
+			</tr>
+		</table>
+		<table width="80%" border="1" cellspacing="50%" cellpadding="80">
+			<tr>
+				<th>www.dreamdu.com</th>
+				<th>.com域名的数量</th>
+				<th>.cn域名的数量</th>
+				<th>.net域名的数量</th>
+			</tr>
+			<tr>
+				<td>2003年</td>
+				<td>1000</td>
+				<td>2000</td>
+				<td>3000</td>
+			</tr>
+			<tr>
+				<td>2004年</td>
+				<td>4000</td>
+				<td>5000</td>
+				<td>6000</td>
+			</tr>
+			<tr>
+				<td>2005年</td>
+				<td>7000</td>
+				<td>8000</td>
+				<td>9000</td>
+			</tr>
+		</table>
+		<p>分段</p>
+		<table width="80%" border="1" cellpadding="80">
+			<tr>
+				<th>www.dreamdu.com</th>
+				<th>.com域名的数量</th>
+				<th>.cn域名的数量</th>
+				<th>.net域名的数量</th>
+			</tr>
+			<tr>
+				<td align="center">2003年</td>
+				<td align="center">1000</td>
+				<td align="center">2000</td>
+				<td align="center">3000</td>
+			</tr>
+			<tr>
+				<td>2004年</td>
+				<td>4000</td>
+				<td>5000</td>
+				<td>6000</td>
+			</tr>
+			<tr>
+				<td>2005年</td>
+				<td>7000</td>
+				<td>8000</td>
+				<td>9000</td>
+			</tr>
+		</table>
+		<p>分段</p>
+		<table width="80%" border="1" cellpadding="10">
+			<tr>
+				<th>www.dreamdu.com</th>
+				<th>.com域名的数量</th>
+				<th>.cn域名的数量</th>
+				<th>.net域名的数量</th>
+			</tr>
+			<tr>
+				<td align="center">2003年</td>
+				<td align="center">1000</td>
+				<td align="center">2000</td>
+				<td align="center">3000</td>
+			</tr>
+			<tr>
+				<td>2004年</td>
+				<td>4000</td>
+				<td>5000</td>
+				<td>6000</td>
+			</tr>
+			<tr>
+				<td>2005年</td>
+				<td>7000</td>
+				<td>8000</td>
+				<td>9000</td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>

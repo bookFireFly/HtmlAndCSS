@@ -1,0 +1,13 @@
+@charset "UTF-8";
+h1,h2,h3{
+	color:#F00;
+/* 	color:#6CFw; */
+	font-family:"Trebuchet Ms",Arial,Helvetica,sans-serif;
+}
+p{
+	color:#F00;
+/* 	color:#F00; */
+	font-family:宋体,Arial;
+	font-weight:900;
+	font-size:36px;
+}
